@@ -123,7 +123,7 @@ def helpMenu():
     Coding Challenge:
     Usage:
     1) python main.py                      #executes the program and runs the default tickerProcessing function
-    2) python main.py -biggest_loser       #executes the program and runs the biggestLoser function
+    2) python main.py -biggest-loser       #executes the program and runs the biggestLoser function
     3) python main.py --help               #displays this menu; additional flags to bring up the menu are -h or -H
     '''
     )
@@ -145,7 +145,7 @@ if ('--help' in args) or ('-h' in args) or ('-H' in args):
     sys.exit()
 
 #we made it here, so we are not asking for help and have executed the program successfully
-#loop through the args to determine if the biggest_loser argument was passed, or if we are running the default program
+#loop through the args to determine if the biggest-loser argument was passed, or if we are running the default program
 for x in args:
     print("Argument: ", x)
 
@@ -163,7 +163,7 @@ for x in args:
 
         if (x == 'executeMain'):
             prettyPrint(tickerProcessing(startDate, endDate, tickers));
-        elif (x == '-biggest_loser'):
+        elif (x == '-biggest-loser'):
             prettyPrint(biggestLoser(startDate, endDate, tickers));
         else:
             #invalid arguments likely passed
