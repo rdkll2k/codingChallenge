@@ -30,7 +30,7 @@ class functionTest(unittest.TestCase):
         eDate = datetime.strptime("2001-01-31", '%Y-%m-%d')
         tickers = ["aTicker"]
         main.quandl.get_table = mock.Mock(return_value=testTickerData)
-        self.failUnless(main.tickerProcessing(sDate, eDate, tickers) == expectedResults)
+        self.assertTrue(main.tickerProcessing(sDate, eDate, tickers) == expectedResults)
 
     """
     test checks the functionality of the biggestLoser function to ensure it properly calculates the number
@@ -44,7 +44,7 @@ class functionTest(unittest.TestCase):
         eDate = datetime.strptime("2001-01-31", '%Y-%m-%d')
         tickers = ["aTicker"]
         main.quandl.get_table = mock.Mock(return_value=testBiggestLoserData)
-        self.failUnless(main.biggestLoser(sDate, eDate, tickers) == expectedResults)
+        self.assertTrue(main.biggestLoser(sDate, eDate, tickers) == expectedResults)
 
 if __name__ == '__main__':
     unittest.main()

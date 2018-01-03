@@ -1,7 +1,6 @@
 import sys
 import quandl
 import json
-import pprint
 #import calendar
 #import pandas as pd
 import lib.settings as STNGS
@@ -131,7 +130,7 @@ def helpMenu():
 
 
 """
-main execution, check for args
+main execution
 """
 #check to see if arguments are being passed
 #if not set args to execute the main function
