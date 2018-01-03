@@ -7,12 +7,15 @@ Quandl stock price retrieval, processing, and display application
 - Displays the Average Monthly Open and Close prices for each security for each month of data in the data set. 
 The securities to use are: COF, GOOGL, and MSFT.  Perform this analysis for Jan - June of 2017
 
-- Additional Feature: —biggest-loser: Display the ticker symbol and the number of days for the security with the most days in which the closing price was lower than that day’s opening price.
+- Additional Feature: -biggest-loser: Display the ticker symbol and the number of days for the security with the most days in which the closing price was lower than that day’s opening price.
 
 ## Getting Started
 This program was written using Eclipse and executed from the command prompt on a Windows machine. It should operate equally well on a Linux/Unix machine.
 
-To install the program, once the prerequisites have been met, download the project from GitLab and from the download directory change to the codingChallenge folder and run:
+To install the program, once the prerequisites have been met, download the project from GitHub at:
+    https://github.com/rdkll2k/codingChallenge.git
+
+From the download directory change to the codingChallenge folder and run:
     pip install -e .
 
 Once installed, the program can be executed via the command line by running any of the following commands:
